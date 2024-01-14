@@ -1,20 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// App.js
+import React, { useState } from 'react';
+import { StatusBar, Switch, View } from 'react-native';
+import AppContent from './components/AppContent';
+import { styles } from './styles/styles';
+import { FontAwesome5 } from '@expo/vector-icons';
 
-export default function App() {
+const App = () => {
+  const [lightTheme, setLightTheme] = useState(true);
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <StatusBar backgroundColor="#0088B4" barStyle="light-content" />
+      <AppContent />
+    </>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;

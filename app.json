@@ -4,7 +4,7 @@
     "slug": "AI-coverletter-generator",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/customicon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -19,12 +19,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/customicon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.lauritorma.AIcoverlettergenerator"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f11d8709-ea9e-4e57-b3ba-b8a6cd483438"
+      }
     }
   }
 }
